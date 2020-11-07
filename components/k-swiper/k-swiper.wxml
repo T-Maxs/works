@@ -1,0 +1,9 @@
+<!--components/k-swiper/k-swiper.wxml-->
+<view class="k-swiper">
+  <swiper autoplay circular indicator-dots indicator-color="#f5f5f5" style="height:{{wdh+'rpx'}}">
+    <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+      <image style="width:{{w+'%'}}" src="{{item.image_src || item.pics_big}}" mode="widthFix" bindtap="handelImg"
+        data-url="{{item.image_src || item.pics_big}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

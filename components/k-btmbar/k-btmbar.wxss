@@ -1,0 +1,55 @@
+/* components/k-btmbar/k-btmbar.wxss */
+@import "../../style/icon.wxss";
+
+.btmbar{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f5f5f5;
+  height: 90rpx;
+  border-top: 1px solid #ffa500;
+  z-index: 2;
+}
+button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.left{
+  flex: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left>view,.left>navigator{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10rpx;
+  font-size: 24rpx;
+  position: relative;
+}
+.right{
+  flex: 4;
+  display: flex;
+  z-index: 99;
+}
+.right>view{
+  flex: 1;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 90rpx;
+}
+.addcart{
+  background: #ffa500;
+}
+.buy{
+  background: #eb4450;
+}

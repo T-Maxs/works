@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "k-swiper":"../../components/k-swiper/k-swiper",
+    "k-floor":"../../components/k-floor/k-floor",
+    "catelist":"./children/catelist/catelist"
+  },
+  "navigationBarTitleText": "优购物"
+}

@@ -1,0 +1,16 @@
+<!--pages/category/index.wxml-->
+<!-- 搜索 -->
+<navigator url="/pages/search/search" open-type="navigate" class="home-search">
+  <SearchInput />
+</navigator>
+<!-- 内容 -->
+<view class="category">
+  <scroll-view class="cate-left" scroll-y>
+    <block wx:for="{{leftTitles}}" wx:key="index">
+      <view data-index="{{index}}" class="{{index === currIndex ? 'active' : ''}}" bindtap="handleClick">{{item}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view scroll-top="{{stp}}" class="cate-right" scroll-y>
+    <goodsNav wx:for="{{rightTitles}}" wx:key="index" goods="{{item}}"/>
+  </scroll-view>
+</view>

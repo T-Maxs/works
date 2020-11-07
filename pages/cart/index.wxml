@@ -1,0 +1,45 @@
+<!--pages/cart/index.wxml-->
+<!-- 获取收货地址 -->
+<view class="cityAll">
+  <view class="city" wx:if="{{!address}}">
+    <view class="addCity" bindtap="addCity">+添加收货地址</view>
+  </view>
+  <view wx:else class="user">
+    <view class="userComment">
+      <view class="name">{{address.userName}}</view>
+      <view class="phone">{{address.telNumber}}</view>
+    </view>
+    <view class="userCity">{{address.all}}</view>
+  </view>
+  <view class="delete">
+    <view class="del_btn" bindtap="addCity">编辑</view>
+  </view>
+</view>
+<!-- 标题 -->
+<view class="title" wx:if="{{cart.length === 0}}">购物清单</view>
+<!-- 购物车物品 -->
+<view class="goods">
+  <block wx:if="{{cart.length === 0}}">
+    <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658">
+    </image>
+  </block>
+  <block wx:else>
+    <cartItem wx:for="{{cart}}" wx:key="index" item="{{item}}" bind:handelChange="handelChange"
+      bind:handelSub="handelSub" bind:handelAdd="handelAdd" />
+  </block>
+</view>
+<!-- 购物车结算 全选 -->
+<view class="done">
+  <view class="left">
+    <checkbox-group bindchange="handelAllChange">
+      <checkbox checked="{{checkAll}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="right">
+    <view class="allNum">
+      <view>合计:<text>￥{{priceAll}}</text></view>
+      <view>包含运费</view>
+    </view>
+    <view class="addNum" bindtap="handlePay">结算({{numAll}})</view>
+  </view>
+</view>

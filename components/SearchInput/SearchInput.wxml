@@ -1,0 +1,9 @@
+<!--components/SearchInput/SearchInput.wxml-->
+<view class="main">
+<view class="input">
+  <image class="" src="../../icons/search.png" mode="aspectFit" ></image>
+  <input type="text" placeholder="淘一淘" placeholder-class="search-placeholder" value="{{text ?text :value}}" bindinput="handleInput"/>
+
+</view>
+  <view class="search" bindtap="handleTrue">搜索</view>
+</view>

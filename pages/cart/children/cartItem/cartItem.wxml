@@ -1,0 +1,24 @@
+<!--pages/cart/children/cartItem/cartItem.wxml-->
+
+<navigator url="{{isPay || !isCollect ? '/pages/goods-detial/goods-detial?goods_id=' + item.goods_id :''}}"
+  class="item">
+  <view class="check" wx:if="{{isPay}}">
+    <checkbox-group data-id="{{item.goods_id}}" bindchange="handelChange">
+      <checkbox checked="{{item.checked}}"></checkbox>
+    </checkbox-group>
+  </view>
+  <view class="img">
+    <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+  </view>
+  <view class="comment">
+    <view class="title">{{item.goods_name}}</view>
+    <view class="bottom">
+      <view class="price">￥{{item.goods_price}}</view>
+      <view class="sum">
+        <view class="sub" catchtap="handelSub" wx:if="{{isPay}}">-</view>
+        <view class="num"><text wx:if="{{!isPay && isCollect}}" class="text">x</text>{{item.num}}</view>
+        <view class="add" catchtap="handelAdd" wx:if="{{isPay && isCollect}}">+</view>
+      </view>
+    </view>
+  </view>
+</navigator>

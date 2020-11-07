@@ -1,0 +1,6 @@
+<!--components/k-tabbar/k-tabbar.wxml-->
+<view class="tabbar">
+  <block wx:for="{{barTitles}}" wx:key="id">
+    <view class="tab-item {{curIndex === item.id ? 'active' : ''}}" bindtap="togTitle" data-id="{{item.id}}" >{{item.name}}</view>
+  </block>
+</view>

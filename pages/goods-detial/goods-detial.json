@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "k-swiper":"../../components/k-swiper/k-swiper",
+    "k-btmbar":"../../components/k-btmbar/k-btmbar"
+  },
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "详情"
+}

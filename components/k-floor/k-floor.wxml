@@ -1,0 +1,19 @@
+<!--components/k-floor/k-floor.wxml-->
+<view class="floor">
+  <view class="title">
+    <image mode="widthFix" src="{{floor.floor_title.image_src}}"></image>
+  </view>
+  <view class="content">
+    <navigator class="left" url="/pages/search/search?name={{floor.product_list[0].name}}">
+      <image mode="widthFix" src="{{floor.product_list[0].image_src}}"></image>
+    </navigator>
+    <view class="right">
+      <block wx:for="{{floor.product_list}}" wx:key='index' >
+        <navigator url="/pages/search/search?name={{item.name}}">
+          <image  src="{{item.image_src}}"></image>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>
+

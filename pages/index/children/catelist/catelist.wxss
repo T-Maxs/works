@@ -1,0 +1,12 @@
+/* pages/index/children/catelist/catelist.wxss */
+.home-cate{
+  display: flex;
+}
+.home-cate navigator{
+  flex: 1;
+  padding: 40rpx;
+  padding-top: 30rpx;
+}
+.home-cate image{
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+<!--pages/goods-list/goods-item/goods-item.wxml-->
+<navigator class="goods-item" url="/pages/goods-detial/goods-detial?goods_id={{goodsList.goods_id}}">
+  <view class="goods-left">
+    <image src="/icons/notFind.png" wx:if="{{!goodsList.goods_small_logo}}"></image>
+    <image src="{{goodsList.goods_small_logo}}" wx:else></image>
+  </view>
+  <view class="goods-right">
+    <view class="title">{{goodsList.goods_name}}</view>
+    <view class="price">￥{{goodsList.goods_price}}</view>
+  </view>
+</navigator>

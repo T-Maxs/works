@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "goodsNav":"./children/goodsNav/goodsNav"
+  },
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "分类"
+}

@@ -1,0 +1,11 @@
+/* components/k-swiper/k-swiper.wxss */
+.k-swiper{
+  margin-top: 10rpx;
+}
+.k-swiper swiper{
+  height: 340rpx;
+  text-align: center;
+}
+.k-swiper image{
+  width: 100%;
+}

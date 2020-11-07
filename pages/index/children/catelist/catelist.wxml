@@ -1,0 +1,9 @@
+<!--pages/index/children/catelist/catelist.wxml-->
+<view class="home-cate">
+  <navigator wx:for="{{catesList}}" wx:key="index" url="/pages/search/search?name={{item.name}}">
+    <image mode="widthFix" src="{{item.image_src}}" bindtap=""></image>
+  </navigator>
+</view>
+
+
+

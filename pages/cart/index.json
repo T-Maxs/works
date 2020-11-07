@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cartItem":"./children/cartItem/cartItem"
+  },
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "购物车"
+}

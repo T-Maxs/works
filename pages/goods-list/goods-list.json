@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "k-tabbar":"../../components/k-tabbar/k-tabbar",
+    "goods-item":"./goods-item/goods-item"
+
+  },
+  "navigationBarBackgroundColor": "#F40",
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"light"
+}

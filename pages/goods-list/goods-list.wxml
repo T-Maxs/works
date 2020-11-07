@@ -1,0 +1,9 @@
+<!--pages/goods-list/goods-list.wxml-->
+<!-- 搜索 -->
+<navigator url="/pages/search/search" open-type="navigate" class="home-search">
+  <SearchInput />
+</navigator>
+<!-- 导航栏 -->
+<k-tabbar barTitles="{{barTitles}}" bind:togTab="togTab" curIndex="{{ currentIndex}}"></k-tabbar>
+<!-- 商品列表 -->
+<goods-item wx:for="{{goods[currentIndex].list}}" goodsList="{{item}}" wx:key="index"/>

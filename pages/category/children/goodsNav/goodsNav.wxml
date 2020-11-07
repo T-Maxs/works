@@ -1,0 +1,14 @@
+<!--pages/category/children/goodsNav/goodsNav.wxml-->
+<view class="goodsNav" wx:if="{{goods.children.length > 0}}">
+  <view class="title">/<text>{{goods.cat_name}}</text>/</view>
+  <view class="icon">
+    <block wx:for="{{goods.children}}" wx:key="index">
+      <view class="icon-item">
+        <navigator url="/pages/goods-list/goods-list?cid={{item.cat_id}}">
+          <image src="{{item.cat_icon}}"></image>
+        </navigator>
+        <text>{{item.cat_name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

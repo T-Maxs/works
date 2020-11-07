@@ -1,0 +1,61 @@
+/* pages/cart/children/cartItem/cartItem.wxss */
+.item{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+} 
+.check{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img image{
+  width: 80%;
+}
+.comment{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.comment .title{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.comment .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.comment .bottom .price{
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+.comment .bottom .sum{
+  display: flex;
+  padding-right: 20rpx;
+}
+.comment .bottom .sum .sub,.comment .bottom .sum .add{
+  width: 55rpx;
+  height: 55rpx;
+  border: 1rpx solid #ccc;
+  text-align: center;
+  line-height: 55rpx;
+}
+.comment .bottom .sum .num{
+  margin: 0 15rpx;
+  line-height: 55rpx;
+}
+.text{
+  padding-right:10rpx;
+}

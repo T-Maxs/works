@@ -1,0 +1,25 @@
+<!--pages/goods-detial/goods-detial.wxml-->
+<!-- 轮播图 价格 -->
+<k-swiper swiperList="{{goodsMain.pics}}" wdh="{{500}}" w="{{60}}"/>
+<view class="price">￥{{goodsMain.goods_price}}</view>
+<!-- 大标签 -->
+<view class="nav">
+  <view class="nav-left">{{goodsMain.goods_name}}</view>
+  <view class="nav-right" bindtap="togLike">
+    <image class="icon" src="/icons/like.png" wx:if="{{likeShow}}"></image>
+    <image class="icon" src="/icons/like_active.png" wx:else></image>
+    <view>收藏</view>
+  </view>
+</view>
+<!-- 图文信息 -->
+<view class="goods_info">
+  <view class="info-title">图文详情</view>
+  <!-- 富文本 -->
+  <!-- {{goodsMain.goods_introduce}} -->
+  <view class="info-content">
+    <rich-text nodes="{{goodsMain.goods_introduce}}"></rich-text>
+  </view>
+</view>
+
+<!-- 底部导航栏 -->
+<k-btmbar bind:addCart="addCart"/>
