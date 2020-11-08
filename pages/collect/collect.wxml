@@ -1,0 +1,11 @@
+<!--pages/collect/collect.wxml-->
+<!-- 头部标题 -->
+<k-tabbar barTitles="{{bars}}" bind:togTab="togTab" curIndex="{{curIndex}}"/>
+<!-- 选择栏 -->
+<!-- <view class="change">
+  <view wx:for="{{changes}}" wx:key="index" class="all {{changeId === index ?'active':''}}" bindtap="togChanges" data-index="{{index}}">{{item}}</view>
+</view> -->
+<!-- 商品展示 -->
+<view class="goods">
+  <cartItem wx:for="{{cart}}" wx:key="index" item="{{item}}" isPay="{{false}}" isCollect="{{false}}"/>
+</view>

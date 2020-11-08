@@ -1,0 +1,86 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background-color: #f3f4f6;
+}
+.title{
+  color: #666;
+  padding-left: 20rpx;
+  margin-top: 30rpx;
+}
+.change{
+  padding: 20rpx 16rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.change>view{
+  margin-top: 18rpx;
+  margin-right: 20rpx;
+  padding: 18rpx 36rpx;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.active{
+  border: 1px solid #ccc;
+  color: red;
+}
+.comment{
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+textarea{
+  padding: 20rpx;
+}
+.fool{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom:20rpx ;
+}
+.fool>button.foolBtn{
+  width: 90rpx !important;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 60rpx;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #888;
+  margin-left: 20rpx;
+}
+.images{
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.off{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  position: absolute;
+  right: -19rpx;
+  top: -19rpx;
+}
+.images>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.submit{
+  background-color: red;
+  color: #fff;
+  font-size: 36rpx;
+  padding: 20rpx 10rpx;
+  text-align: center;
+  width: 200rpx;
+  font-weight: bold;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  float: right;
+  margin-right: 30rpx;
+}

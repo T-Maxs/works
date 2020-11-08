@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "k-tabbar":"/components/k-tabbar/k-tabbar"
+  },
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "意见反馈"
+}

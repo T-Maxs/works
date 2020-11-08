@@ -1,0 +1,16 @@
+/* pages/collect/collect.wxss */
+.change{
+  background-color: #f3f4f6;
+  padding: 20rpx 16rpx;
+  display: flex;
+}
+.change>view{
+  margin-right: 10rpx;
+  padding: 18rpx 16rpx;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.active{
+  border: 1px solid red;
+  color: red;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "k-tabbar":"/components/k-tabbar/k-tabbar",
+    "cartItem":"../cart/children/cartItem/cartItem"
+  },
+
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "商品收藏"
+}

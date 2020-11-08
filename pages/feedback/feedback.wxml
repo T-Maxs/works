@@ -1,0 +1,22 @@
+<!--pages/feedback/feedback.wxml-->
+<!-- 标签 -->
+<k-tabbar barTitles="{{bars}}" bind:togTab="togTab" curIndex="{{curIndex}}"/>
+<!-- 问题 -->
+<view class="title">问题的种类</view>
+<!-- 选择栏 -->
+<view class="change">
+  <view wx:for="{{changes}}" wx:key="index" class="all {{changeId === index ?'active':''}}" bindtap="togChanges" data-index="{{index}}">{{item}}</view>
+</view>
+<!-- 回答问题 上传图片 -->
+<view class="comment">
+  <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请描述一下您的问题"> </textarea>
+  <view class="fool">
+    <button class="foolBtn" bindtap="handleChooseImg">+</button>
+    <view class="images" wx:for="{{imgs}}" wx:key="index" bindtap="handleOff" data-index="{{index}}">
+      <view class="off" >x</view>
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+</view>
+<!-- 提交 -->
+<view class="submit" bindtap="handleSubmit">√提交</view>
