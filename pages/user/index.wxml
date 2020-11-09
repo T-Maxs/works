@@ -1,0 +1,60 @@
+<!--pages/user/index.wxml-->
+<view class="user">
+  <block wx:if="{{!userInfo.avatarUrl}}">
+    <button class="btn" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"> 登录 </button>
+  </block>
+  <block wx:else>
+    <!-- <image class="bg" src="{{userInfo.avatarUrl}}"></image> -->
+    <view class="comment">
+      <image class="header" src="{{userInfo.avatarUrl}}"></image>
+      <view class="name">{{userInfo.nickName}}</view>
+    </view>
+  </block>
+</view>
+<view class="main">
+  <view class="collect">
+    <block wx:for="{{collects}}" wx:key="index">
+      <view data-url="{{item.url}}" class="collect-item" catchtap="navigatePage">
+        <view class="num">{{item.num}}</view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="order">
+    <view class="order-title">我的订单</view>
+    <view class="order-all">
+      <navigator class="order-item" url="../cart/index" open-type="switchTab" >
+        <text class="iconfont icon-74wodedingdan"></text>
+        <view>全部订单</view>
+      </navigator>
+      <view class="order-item" catchtap="handlePay">
+        <text class="iconfont icon-fukuan"></text>
+        <view>待付款</view>
+      </view>
+      <view class="order-item" >
+        <text class="iconfont icon-shouhuo"></text>
+        <view>待收货</view>
+      </view>
+      <view class="order-item">
+        <text class="iconfont icon-tuikuanguanhuai"></text>
+        <view>退款退货</view>
+      </view>
+    </view>
+  </view>
+  <view class="goods-city">
+      <text catchtap="addCity">收货地址管理</text>
+  </view>
+  <view class="service">
+    <navigator>
+      <text>联系客服</text>
+    </navigator>
+    <text>客服热线：888-888-888</text>
+  </view>
+  <view class="poinion">
+    <navigator url="/pages/feedback/feedback">意见反馈</navigator>
+  </view>
+  <!-- <view class="about">
+    <navigator>关于我们</navigator>
+  </view> -->
+  <view class="recommend">把应用推荐给其他人</view>
+</view>

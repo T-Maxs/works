@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <SearchInput bind:handleInput="handleInput" bind:handleTrue="handleTrue" text="{{text}}" />
+</view>
+<view class="histroy">
+  <view class="top">
+    <view class="title">历史搜索</view>
+    <view class="clear" bindtap="handleClear">清空所有</view>
+  </view>
+  <view class="his-txt">
+    <view class="item-txt" wx:for="{{histroy}}" wx:key="index" bindtap="handleHistroy" data-text="{{item}}">{{item}}</view>
+  </view>
+</view>
+<view class="goods">
+  <view class="title">搜索结果</view>
+  <navigator class="item" wx:for="{{goods}}" wx:key="goods_id" url="/pages/goods-detial/goods-detial?goods_id={{item.goods_id}}">{{item.goods_name}}</navigator>
+</view>

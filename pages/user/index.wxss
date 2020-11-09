@@ -1,0 +1,112 @@
+/* pages/user/index.wxss */
+page {
+  background-color: #edece8;
+}
+
+.btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  border: 1px solid #f40;
+  background: #f40;
+}
+.user{
+  height: 250rpx;
+  width: 100%;
+  position: relative;
+  /* background-color:#f40; */
+  overflow: hidden;
+}
+.bg{
+  height: 510rpx;
+  width: 100%;
+  filter: blur(10rpx);
+}
+.comment{
+  padding-top: 6%;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  text-align: center;
+}
+.comment .name{
+  margin-left: 7%;
+  color: #000000;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.header{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+
+.main{
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100rpx;
+  color: #666;
+  position: relative;
+  top: -35rpx;
+}
+.collect{
+  background-color: #fff;
+  display: flex;
+  padding: 15rpx;
+  border-radius: 10rpx;
+}
+.collect-item{
+  text-align: center;
+  flex: 1;
+}
+
+.collect-item .num{
+  color: #000000;
+  font-weight: 600;
+}
+
+.order{
+  margin-top: 45rpx;
+}
+.order-title{
+  background-color: #fff;
+  margin-bottom: 8rpx;
+  padding:16rpx 18rpx;
+  border-radius: 10rpx;
+}
+.order-all{
+  display: flex;
+  background-color: #fff;
+  padding: 15rpx;
+  border-radius: 10rpx;
+}
+.order-item{
+  flex: 1;
+  text-align: center;
+  font-size: 26rpx;
+}
+.order-item text{
+  font-size: 40rpx;
+}
+.order-item view{
+  margin-top: 8rpx;
+}
+.goods-city,.service,.poinion,.about,.recommend{
+  background-color: #fff;
+  margin-top: 8rpx;
+  padding:16rpx 18rpx;
+  border-radius: 10rpx;
+}
+.goods-city,.recommend{
+  margin: 28rpx 0;
+}
+.service{
+  display: flex;
+  justify-content: space-between;
+}
+
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput"
+  },
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "搜索页"
+}
