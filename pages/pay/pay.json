@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cartItem":"../cart/children/cartItem/cartItem"
+  },
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "商品支付"
+}

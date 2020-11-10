@@ -1,0 +1,83 @@
+/* pages/pay/pay.wxss */
+page{
+  padding-bottom: 100rpx;
+}
+.cityAll{
+  display: flex;
+}
+
+.user{
+  margin-top: 15rpx;
+  padding: 10rpx 30rpx;
+  margin-right: 90rpx;
+}
+
+.userComment{
+  display: flex;
+  align-items: center;
+}
+.title{
+  border: 1px solid #f50;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+  height: 70rpx;
+  margin-top: 10rpx;
+  color: #f50;
+  text-align: center;
+  line-height: 70rpx;
+}
+.name{
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+.phone{
+  margin-left: 35rpx;
+  color: rgb(104, 100, 100);
+}
+.done{
+  display: flex;
+  height: 100rpx;
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  background: #fff;
+}
+.done .left{
+  flex: 1;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+}
+.done .right{
+  flex: 3;
+  display: flex;
+  width: 380rpx;
+}
+.done .right>view{
+  flex: 1;
+}
+.done .right .allNum{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.done .right .allNum text{
+  color: #f40;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.done .right .addNum{
+  background: #eb4450;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32rpx;
+}
