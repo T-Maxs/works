@@ -5,12 +5,27 @@ import {
   homeFollor
 } from "../../service/home"
 Page({
-  
+
   /**
    * 页面的初始数据
    */
   data: {
-    swiperList: [],
+    swiperList: [{
+        "image_src": "https://api-hmugo-web.itheima.net/pyg/banner1.png",
+        "open_type": "navigate",
+        "goods_id": 55596,
+        "navigator_url": "/pages/goods_detail/main?goods_id=129"
+      }, {
+        "image_src": "https://api-hmugo-web.itheima.net/pyg/banner2.png",
+        "open_type": "navigate",
+        "goods_id": 17928,
+        "navigator_url": "/pages/goods_detail/main?goods_id=395"
+      }, {
+        "image_src": "https://api-hmugo-web.itheima.net/pyg/banner3.png",
+        "open_type": "navigate",
+        "goods_id": 55760,
+        "navigator_url": "/pages/goods_detail/main?goods_id=38"
+    }],
     catesList: [{
       'name': '电器',
       'image_src': 'https://api-hmugo-web.itheima.net/pyg/icon_index_nav_4@2x.png'
@@ -26,24 +41,6 @@ Page({
     }],
     floors: []
   },
-  // 获取轮播图数据
-  _homeSwiper() {
-    homeSwiper().then(res => {
-      this.setData({
-        swiperList: res.data.message
-      })
-    })
-  },
-  // 获取分类导航数据
-  _homeCates() {
-    // homeCates().then(res => {
-    //   // console.log(res);
-    //   this.setData({
-    //     catesList: res.data.message
-    //   })
-    //   console.log(this.data.catesList)
-    // })
-  },
   // 获取楼层数据
   _homeFloor() {
     homeFollor().then(res => {
@@ -58,8 +55,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this._homeSwiper();
-    this._homeCates();
     this._homeFloor();
   },
 
@@ -70,30 +65,6 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
   onPullDownRefresh: function () {
 
   },

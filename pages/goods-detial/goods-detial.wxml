@@ -1,7 +1,7 @@
 <!--pages/goods-detial/goods-detial.wxml-->
 <!-- 轮播图 价格 -->
 <k-swiper swiperList="{{goodsMain.pics}}" wdh="{{500}}" w="{{60}}"/>
-<view class="price">￥{{goodsMain.goods_price}}</view>
+<view class="price">推荐市场价格：￥{{goodsMain.goods_price}}</view>
 <!-- 大标签 -->
 <view class="nav">
   <view class="nav-left">{{goodsMain.goods_name}}</view>

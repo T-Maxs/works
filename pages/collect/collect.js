@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bars:[{name:"商品收藏",id:0},{name:"浏览足迹",id:1}],
+    bars:[{name:"商品收藏",id:0}],
     curIndex:0,
     changeId:0,
     // changes:["全部","正在热卖","即将上线"],
