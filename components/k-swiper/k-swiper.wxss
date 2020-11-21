@@ -1,6 +1,7 @@
 /* components/k-swiper/k-swiper.wxss */
 .k-swiper{
-  margin-top: 10rpx;
+  /* margin-top: 10rpx; */
+  padding: 15rpx;
 }
 .k-swiper swiper{
   height: 340rpx;
@@ -8,4 +9,5 @@
 }
 .k-swiper image{
   width: 100%;
+  border-radius: 15rpx;
 }
